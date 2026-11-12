@@ -175,3 +175,15 @@ footer { text-align: center; padding: 40px 20px; color: var(--muted); border-top
 .cert div { padding: 16px 20px 20px; }
 .cert p { color: var(--muted); font-size: .92rem; margin-top: 4px; }
 @media (max-width: 800px) { .narrow[style*="grid-template-columns"] { grid-template-columns: 1fr !important; text-align: center; } }
+
+/* Languages box (About) */
+.lang-box { max-width: 420px; margin: 40px auto 0; background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); padding: 22px 28px 12px; box-shadow: 0 12px 34px rgba(0,0,0,.35); }
+.lang-box h3 { text-align: center; margin-bottom: 6px; }
+
+/* Mobile: keep the sticky menu to one swipeable line */
+@media (max-width: 800px) {
+  nav { flex-wrap: nowrap; flex-direction: column; align-items: flex-start; gap: 4px; padding: 10px 16px; }
+  nav ul { flex-wrap: nowrap; overflow-x: auto; max-width: 100%; width: 100%; scrollbar-width: none; }
+  nav ul::-webkit-scrollbar { display: none; }
+  nav ul a { white-space: nowrap; }
+}
